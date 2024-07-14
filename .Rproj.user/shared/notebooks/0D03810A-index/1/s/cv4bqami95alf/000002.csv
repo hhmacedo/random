@@ -1,0 +1,5 @@
+"0","
+paste0(sample(letters, 1), sample(c(letters, 0:9), 7, replace = TRUE)) |>
+  cat()"
+"2","/bin/sh: 1: webr-r: not found
+"

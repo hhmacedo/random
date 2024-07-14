@@ -1,0 +1,18 @@
+---
+title: "random"
+format: html
+engine: knitr
+webr:
+  show-startup-message: false
+filters:
+ - webr
+---
+
+```{webr-r}
+#| context: output
+paste0(
+  c(sample(letters, 1), sample(c(letters, 0:9), 7, replace = TRUE)),
+  collapse = ""
+  )|>
+  cat()
+```

@@ -1,0 +1,15 @@
+{
+  "hash": "34193d63b7546598c9132a0dfdcdb165",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"random\"\nformat: html\nengine: knitr\nwebr:\n  show-startup-message: false\nfilters:\n - webr\n---\n\n\n```{webr-r}\n#| context: output\npaste0(\n  c(sample(letters, 1), sample(c(letters, 0:9), 7, replace = TRUE)),\n  collapse = \"\"\n  )|>\n  cat()\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
