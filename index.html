@@ -356,7 +356,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"dpi":72,"editor-quick-suggestions":"false","editor-max-height":"","out-height":"","context":"output","message":"true","read-only":"false","fig-width":7,"output":"true","warning":"true","results":"markup","autorun":"true","editor-font-scale":"1","out-width":"700px","comment":"","fig-cap":"","classes":"","label":"unnamed-chunk-1","fig-height":5,"editor-word-wrap":"true"},"id":1,"code":"paste0(\n  c(sample(letters, 1), sample(c(letters, 0:9), 7, replace = TRUE)),\n  collapse = \"\"\n  )|>\n  cat()"}];
+globalThis.qwebrCellDetails = [{"code":"paste0(\n  c(sample(letters, 1), sample(c(letters, 0:9), 7, replace = TRUE)),\n  collapse = \"\"\n  )|>\n  cat()","options":{"out-width":"700px","context":"output","message":"true","comment":"","editor-word-wrap":"true","editor-max-height":"","warning":"true","out-height":"","editor-quick-suggestions":"false","dpi":72,"label":"unnamed-chunk-1","results":"markup","fig-cap":"","editor-font-scale":"1","classes":"","output":"true","read-only":"false","autorun":"true","fig-width":7,"fig-height":5},"id":1}];
 
 </script>
 <script type="module">
@@ -1990,7 +1990,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/hhmacedo\.github\.io\/random\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
